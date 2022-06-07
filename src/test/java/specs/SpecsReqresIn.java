@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.with;
 public class SpecsReqresIn {
 
     public static RequestSpecification request = with()
-            .baseUri("https://reqres.in/")
+            .baseUri("https://reqres.in/api/")
             .log().body();
 
     public static ResponseSpecification responseSpec = new ResponseSpecBuilder()

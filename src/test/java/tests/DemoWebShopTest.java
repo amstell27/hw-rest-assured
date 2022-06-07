@@ -1,6 +1,5 @@
 package tests;
 
-import static io.restassured.RestAssured.requestSpecification;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import io.restassured.http.Cookies;

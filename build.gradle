@@ -10,7 +10,7 @@ repositories {
 }
 
 def jupiterVersion = "5.8.2",
-    restAssuredVersion = "5.0.1"
+    restAssuredVersion = "5.0.1",
     slf4jVersion = "1.7.36"
 
 dependencies {

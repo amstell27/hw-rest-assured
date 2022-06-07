@@ -15,7 +15,7 @@ public class APIReqresInTests {
         given()
                 .spec(request)
                 .when()
-                .get("users/2")
+                .get("api/users/2")
                 .then()
                 .spec(responseSpec)
                 .body("data.email", is("janet.weaver@reqres.in"));
@@ -29,7 +29,7 @@ public class APIReqresInTests {
                 .body(data)
                 .contentType(JSON)
                 .when()
-                .post("register")
+                .post("api/register")
                 .then()
                 .spec(responseSpec)
                 .body("token", is("QpwL5tke4Pnpja7X4"));
@@ -43,7 +43,7 @@ public class APIReqresInTests {
                 .body(data)
                 .contentType(JSON)
                 .when()
-                .post("users")
+                .post("api/users")
                 .then()
                 .statusCode(201)
                 .body("job", is("leader"));
@@ -57,7 +57,7 @@ public class APIReqresInTests {
                 .body(data)
                 .contentType(JSON)
                 .when()
-                .patch("users/2")
+                .patch("api/users/2")
                 .then()
                 .spec(responseSpec)
                 .body("job", is("zion resident"));
@@ -68,7 +68,7 @@ public class APIReqresInTests {
         given()
                 .spec(request)
                 .when()
-                .delete("users/2")
+                .delete("api/users/2")
                 .then()
                 .statusCode(204);
     }
